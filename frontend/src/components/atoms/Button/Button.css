@@ -1,0 +1,6 @@
+/*@import 'utils.scss';*/
+.button {
+  border: 1px solid #442266;
+  background: #426aea;
+  color: red;
+  display: inline-block; }

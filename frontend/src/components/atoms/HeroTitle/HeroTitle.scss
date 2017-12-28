@@ -1,0 +1,28 @@
+@import 'utils';
+
+.title {
+  color: #FFF;
+  text-align: center;
+  line-height: 1.5;
+
+  &__top {
+    display: inline-block;
+    &:after {
+      display: block;
+      content: '';
+      margin: 0 auto;
+      height: 1px;
+      background-color: #FFF;
+    }
+  }
+
+  &__large {
+    color: #FFF;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  &__medium {
+    font-size: 2rem;
+  }
+}
