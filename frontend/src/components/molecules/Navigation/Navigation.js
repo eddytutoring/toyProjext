@@ -10,11 +10,11 @@ const cx = classNames.bind(styles);
 
 const Navigation = () => {
   return (
-    <div>
+    <div className={cx('gnb')}>
       <Login/>
-      <Link to="/tutor" style={{textDecoration: 'none'}}>
+      {/*<Link to="/tutor" style={{textDecoration: 'none'}}>
         <FlatButton>DashBoard</FlatButton>
-      </Link>
+      </Link>*/}
     </div>
   );
 };

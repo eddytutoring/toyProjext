@@ -1,34 +1,18 @@
 import React from 'react';
 import { Logo, Navigation } from 'components';
-import headerStyles from './Header.scss';
+import styles from './Header.scss';
 import classNames from 'classnames/bind';
-import {AppBar, Toolbar, Grid} from 'material-ui';
-import {withStyles} from 'material-ui/styles';
-const cx = classNames.bind(headerStyles);
+//import {AppBar, Toolbar, Grid} from 'material-ui';
+//import {withStyles} from 'material-ui/styles';
+const cx = classNames.bind(styles);
 
-const styles = theme => ({
-  header: {
-    backgroundColor: 'transparent',
-    width: '100%',
-    boxShadow: 'none',
-  },
-
-  button: {
-    backgroundColor: 'transparent'
-  }
-});
-
-const Header = ({classes}) => {
+const Header = () => {
   return (
-    <Grid container spacing={16}>
-      <AppBar className={classes.header}>
-        <Toolbar>
-          <Logo/>
-          <Navigation/>
-        </Toolbar>
-      </AppBar>
-    </Grid>
+    <div className={cx('header')}>
+      <Logo/>
+      <Navigation/>
+    </div>
   );
 };
 
-export default withStyles(styles)(Header);
+export default Header;

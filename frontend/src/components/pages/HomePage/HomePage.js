@@ -1,14 +1,16 @@
 import React from 'react';
-import { PageTemplate, Header, Body, Footer } from 'components';
+import { PageTemplate, Header, Hero, HeroTitle } from 'components';
 
 const HomePage = ({ body }) => {
   return (
     <PageTemplate
       header = { <Header/> }
       body = {
-        <Body body={'home'}>
-        </Body> }
-      footer = { <Footer/>}>
+        <Hero>
+          <HeroTitle></HeroTitle>
+        </Hero>
+      }
+      >
     </PageTemplate>
   );
 };
